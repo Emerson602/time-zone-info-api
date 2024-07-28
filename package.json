@@ -1,0 +1,16 @@
+{
+  "name": "time-zone-info-api",
+  "version": "1.0.0",
+  "main": "countryCodes.js",
+  "scripts": {
+    "dev": "nodemon app.js"    
+  },
+  "keywords": [],
+  "author": "Wemerson Nicacio",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
