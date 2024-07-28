@@ -2,6 +2,7 @@ import countrys from './countryCodes.js';
 import express from 'express';
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -48,8 +49,5 @@ app.get('/city/:city', (request, response) => {
   }
   response.status(200).send(filteredCity);
 }); 
-
-
-const port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log(`Server running successfully on port: ${port}`));
