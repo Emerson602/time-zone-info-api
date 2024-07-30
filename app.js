@@ -1,12 +1,15 @@
-import countrys from './countryCodes.js';  
 import express from 'express';
+import cors from 'cors'; // Atualizado para importação ES Module
+import countrys from './countryCodes.js';
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
-
 app.use(express.static('public'));
+app.use(cors({
+  origin: '*', // Permite todas as origens
+}));
 
 app.get('/', (request, response) => {   
   try {
@@ -33,7 +36,7 @@ app.get('/country/:country', (request, response) => {
   const filteredCountry = countrys.filter((countryObject) => countryObject.country.toLowerCase() == informedCountry);
 
   if (filteredCountry.length === 0) {  
-    response.status(404).send(`Country: "${informedCountry.toLocaleUpperCase()}", not found!`);
+    response.status(404).send(`Country: "${informedCountry.toUpperCase()}", not found!`);
     return;
   }
   response.status(200).send(filteredCountry);
@@ -44,7 +47,7 @@ app.get('/city/:city', (request, response) => {
   const filteredCity = countrys.filter((cityObject) => cityObject.city.toLowerCase() == informedCity);
 
   if (filteredCity.length === 0) {
-    response.status(404).send(`City: "${informedCity.toLocaleUpperCase()}", not found!`);
+    response.status(404).send(`City: "${informedCity.toUpperCase()}", not found!`);
     return;
   }
   response.status(200).send(filteredCity);

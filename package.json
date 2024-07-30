@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "countryCodes.js",
   "scripts": {
-    "dev": "nodemon app.js"    
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "Wemerson Nicacio",
@@ -11,6 +11,7 @@
   "description": "",
   "type": "module",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2"
   }
 }
