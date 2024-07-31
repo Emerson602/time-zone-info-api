@@ -15,7 +15,7 @@ Description: Returns a list of all countries with their respective details.
 
 ```bash
 
-curl -X GET https://time-zone-info-api.vercel.app/
+ https://time-zone-info-api.vercel.app/
 ```
 
 **Response:** 
@@ -43,7 +43,7 @@ id: The ID of the country.
 **Example:**
 
 ```bash 
-curl -X GET https://time-zone-info-api.vercel.app/id/1
+ https://time-zone-info-api.vercel.app/id/1
 ```
 **Response (200):**
 ```json 
@@ -73,7 +73,7 @@ country: The name of the country.
 
 ```bash
 
-curl -X GET https://time-zone-info-api.vercel.app/country/brazil
+ https://time-zone-info-api.vercel.app/country/brazil
 ```
 
 **Response (200):** 
@@ -107,7 +107,7 @@ city: The name of the city.
 
 ```bash
 
-curl -X GET https://time-zone-info-api.vercel.app/city/sao paulo
+ https://time-zone-info-api.vercel.app/city/sao paulo
 ```
 
 **Response (200):**
@@ -164,22 +164,22 @@ npm run dev
 ### Get All Data
 ```bash
 
-curl -X GET https://time-zone-info-api.vercel.app/
+ https://time-zone-info-api.vercel.app/
 ```
 ### Get Data by ID
 ```bash
 
-curl -X GET https://time-zone-info-api.vercel.app/id/1
+ https://time-zone-info-api.vercel.app/id/1
 ```
 ### Get Data by Country
 ```bash
 
-curl -X GET https://time-zone-info-api.vercel.app/country/brazil
+ https://time-zone-info-api.vercel.app/country/brazil
 ```
 ### Get Data by City
 ```bash
 
-curl -X GET https://time-zone-info-api.vercel.app/city/sao paulo
+ https://time-zone-info-api.vercel.app/city/sao paulo
 ```
 ### Author
 Wemerson Nicacio
