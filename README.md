@@ -141,8 +141,8 @@ Prerequisites
 1.Clone the repository:
 
 ```bash
-git clone <https://github.com/Emerson602/time-zone-info-api.git>
-cd <time-zone-info-api>
+git clone https://github.com/Emerson602/time-zone-info-api.git
+cd time-zone-info-api
 ```
 
 2.Install dependencies:
