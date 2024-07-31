@@ -57,9 +57,9 @@ id: The ID of the country.
 ```
 
 **Error Response (404):**
-```bash
+`
 Id: "1", not found!
-```
+`
 
 ## Get Data by Country
 Endpoint: `/country/:country`
@@ -91,9 +91,9 @@ country: The name of the country.
 ```
 **Error Response (404):** 
 
-```text
+`
 Country: "BRAZIL", not found!
-```
+`
 
 ## Get Data by City
 Endpoint: `/city/:city`
@@ -127,9 +127,9 @@ city: The name of the city.
 
 **Error Response (404):**
 
-```text 
+`
 City: "SAO PAULO", not found!
-```
+`
 ## Setup
 **Prerequisites**
 
