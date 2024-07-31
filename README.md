@@ -130,10 +130,11 @@ city: The name of the city.
 ```text 
 City: "SAO PAULO", not found!
 ```
-**Setup**
-Prerequisites
+## Setup
+**Prerequisites**
 
 • Node.js installed
+
 • npm installed
 
 **Installation**
